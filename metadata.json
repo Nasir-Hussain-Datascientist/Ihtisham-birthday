@@ -1,0 +1,6 @@
+{
+  "name": "Ihtisham Khan Birthday Wishes",
+  "description": "An interactive, mobile-first birthday wishes website for a long-distance best friend, from Swat to Peshawar, Pakistani theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

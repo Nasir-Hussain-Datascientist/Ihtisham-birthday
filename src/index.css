@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;750&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom scrolling settings and responsive resets */
+html {
+  scroll-behavior: smooth;
+  background-color: #020205; /* Deep luxury obsidian backdrop */
+}
+
+/* Custom animations helper classes */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* High Contrast Ambient shadow overlays */
+.shadow-glow {
+  filter: drop-shadow(0 0 8px #eab308) drop-shadow(0 0 20px #ca8a04);
+}
+
+/* Custom golden range-slider styles */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fbcfe8; /* Golden core */
+  border: 3px solid #eab308;
+  box-shadow: 0 0 10px #eab308;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #eab308, 0 0 25px #ca8a04;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fbcfe8;
+  border: 3px solid #eab308;
+  box-shadow: 0 0 10px #eab308;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #eab308, 0 0 25px #ca8a04;
+}
